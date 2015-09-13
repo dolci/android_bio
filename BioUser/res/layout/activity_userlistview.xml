@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Users"
+        android:textColor="#008000"
+        android:textSize="25dp"
+        android:layout_margin="3dp"
+        />
+    <ListView
+        android:id="@+id/User_list"
+        
+        
+        
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+         android:cacheColorHint="#00000000"
+        android:clickable="false"
+          
+         android:listSelector="@drawable/list_selector"
+        android:drawSelectorOnTop="false"
+              android:padding="2dp"
+        >
+    </ListView>
+    
+</LinearLayout>

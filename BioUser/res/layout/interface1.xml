@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/pic"
+            style="@style/ImageButtonAppTheme"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="false"
+            android:background="@drawable/capture"
+             />
+
+        <TextView
+            android:id="@+id/namei"
+            style="@style/AutoCompleteTextViewAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/pic"
+             />
+
+        <TextView
+            android:id="@+id/surnamei"
+            style="@style/AutoCompleteTextViewAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/namei"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/pic"
+            />
+
+        <TextView
+            android:id="@+id/profi"
+            style="@style/AutoCompleteTextViewAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/surnamei"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/pic"
+            android:text="Prof" />
+
+        <TextView
+            android:id="@+id/dateBi"
+            style="@style/AutoCompleteTextViewAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/profi"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/pic"
+             />
+
+        <Button
+            android:id="@+id/Edit"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dateBi"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/pic"
+            android:text="Edit" />
+    </RelativeLayout>
+
+     <TextView
+         android:id="@+id/BIO"
+         style="@style/AutoCompleteTextViewAppTheme"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginTop="15dp"
+         android:text="Bio"
+         android:gravity="center"
+         android:textColor="@color/bioc"
+         android:textSize="24sp"
+         android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/desc"
+          style="@style/AutoCompleteTextViewAppTheme"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginTop="15dp"
+          android:lines="5"
+          android:scrollbars="vertical"
+           />
+
+      <Button
+          android:id="@+id/Edit1"
+          style="@style/ButtonAppTheme"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:text="Edit" 
+           android:layout_gravity="right"
+           />
+          
+</LinearLayout>
